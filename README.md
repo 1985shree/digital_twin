@@ -33,13 +33,15 @@ smr-digital-twin/
 
 ## 📐 Mathematical & Kinetic Foundations (Implemented in WGS.py)
 
-The fully validated physics core (`WGS.py`) evaluates three simultaneous, reversible chemical reactions on the supported catalyst surface:
-1. **Primary Reforming (SMR):**
-   \[\text{CH}_4 + \text{H}_2\text{O} \rightleftharpoons \text{CO} + 3\text{H}_2 \quad (\Delta H^\circ_{298} = +206 \text{ kJ/mol})\]
-2. **Water-Gas Shift (WGS):**
-   \[\text{CO} + \text{H}_2\text{O} \rightleftharpoons \text{CO}_2 + \text{H}_2 \quad (\Delta H^\circ_{298} = -41 \text{ kJ/mol})\]
-3. **Global Reforming:**
-   \[\text{CH}_4 + 2\text{H}_2\text{O} \rightleftharpoons \text{CO}_2 + 4\text{H}_2 \quad (\Delta H^\circ_{298} = +165 \text{ kJ/mol})\]
+1. **Primary Reforming (SMR):**  
+\[\text{CH}_4 + \text{H}_2\text{O} \rightleftharpoons \text{CO} + 3\text{H}_2 \quad (\Delta H^\circ_{298} = +206 \text{ kJ/mol})\]
+
+2. **Water-Gas Shift (WGS):**  
+\[\text{CO} + \text{H}_2\text{O} \rightleftharpoons \text{CO}_2 + \text{H}_2 \quad (\Delta H^\circ_{298} = -41 \text{ kJ/mol})\]
+
+3. **Global Reforming:**  
+\[\text{CH}_4 + 2\text{H}_2\text{O} \rightleftharpoons \text{CO}_2 + 4\text{H}_2 \quad (\Delta H^\circ_{298} = +165 \text{ kJ/mol})\]
+
 
 ### Intrinsic Microkinetics (Xu & Froment Model)
 Instead of simplified power-law empirical approximations, the twin utilizes the globally recognized **Langmuir-Hinshelwood-Hougen-Watson (LHHW)** framework derived by Xu & Froment (1989). The reaction velocity is governed by a shared **Surface Crowding Denominator (DEN)**, modeling the physical site competition among competing species on the metal lattice:
